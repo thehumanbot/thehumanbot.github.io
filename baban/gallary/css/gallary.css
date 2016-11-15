@@ -1,0 +1,238 @@
+/*gallary special css critical styles*/
+/*authorized access only thehumanbot*/
+.thehumanbot-gallery {
+  position: relative;
+  margin-bottom: 7em;
+  float: left;
+  width: 100%;
+}
+.thehumanbot-gallery .gallery-item {
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  float: left;
+  z-index: 110;
+}
+.thehumanbot-gallery .gallery-item img {
+  position: relative;
+  max-width: 100%;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+}
+@media screen and (max-width: 1200px) {
+  .thehumanbot-gallery .gallery-item {
+    width: 33.3333%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .thehumanbot-gallery .gallery-item {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .thehumanbot-gallery .gallery-item {
+    width: 50%
+  }
+}
+@media screen and (max-width: 400px) {
+  .thehumanbot-gallery .gallery-item {
+    width: 100%
+  }
+}
+.thehumanbot-gallery .gallery-item .overlay {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 11;
+  vertical-align: middle;
+  padding-top: 20%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.thehumanbot-gallery .gallery-item .overlay h2, .thehumanbot-gallery .gallery-item .overlay span {
+  position: relative;
+  z-index: 12;
+  margin-bottom: 0;
+  text-align: center;
+  display: block;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.thehumanbot-gallery .gallery-item .overlay h2 {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  bottom: -15px;
+}
+@media screen and (max-width: 768px) {
+  .thehumanbot-gallery .gallery-item .overlay h2 {
+    font-size: 18px;
+  }
+}
+.thehumanbot-gallery .gallery-item .overlay span {
+  color: #7ac143;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  bottom: -5px;
+  visibility: hidden;
+  opacity: 0;
+}
+.thehumanbot-gallery .gallery-item .overlay:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.thehumanbot-gallery .gallery-item:hover img {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.thehumanbot-gallery .gallery-item:hover .overlay {
+  visibility: visible;
+  opacity: 1;
+}
+.thehumanbot-gallery .gallery-item:hover .overlay:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.thehumanbot-gallery .gallery-item:hover .overlay h2 {
+  bottom: 0px;
+}
+.thehumanbot-gallery .gallery-item:hover .overlay span {
+  visibility: visible;
+  opacity: 1;
+  bottom: 0px;
+}
+/*./end gallary css, critical css*/
+#sidebar {
+    background-color: #000;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 05px;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    overflow-x: none;
+    overflow-y: none;
+    z-index: 1001;
+}
+#gallarySection, #contactSection, #aboutSection {
+    padding-left:0px;
+    padding-right: 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 33.33%;
+    overflow-y: auto;
+    overflow-x: none;
+    float: right;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+    background-color:dodgerblue;
+}
+#profilePic {
+    width:80%
+}
+/*#closeSidebar {
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 93%
+}*/
+#gallary-header {
+    margin-top: 0px;
+    padding-left: 10px;
+    color: black;
+}
+#menu {
+    height: 50px;
+    display: none;
+    border-radius: 0px;
+    margin: 0px;
+    position: fixed;
+    top: 150px;
+}
+#smallDvcMenu {
+    background-color:lightgray;
+    background-size: cover;
+    height: 20%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right:0px;
+    display: none;
+    padding: 10px;
+}
+#smallMenuClose {
+    padding-right: 10px;
+    padding-top: 10px;
+    color: black;
+}
+#navBtnXs {
+    color: black;
+    font-size: 15.28px;
+    border: none;
+    font-weight: bold;
+}
+#navBtnXs:hover, #navBtnXs:active, #navBtnXs:visited, #navBtnXs:focus {
+    text-decoration: none;
+    border: none; 
+}
+#smallMenuNav {
+    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right:5px;
+    width: 100%;
+    text-align: center;
+}
+#close {
+    float: left;
+    margin-left: 47%
+}
+/*conditionl items disply*/
+@media (max-width:767px) {
+    #sidebar, #openMenu {
+        display: none;
+    }
+    #gallarySection {
+        left: 0;
+        width: 100%;
+    }
+}
