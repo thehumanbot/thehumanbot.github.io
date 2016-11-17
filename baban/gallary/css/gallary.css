@@ -1,10 +1,22 @@
 /*gallary special css critical styles*/
 /*authorized access only thehumanbot*/
+body {
+    -webkit-user-select: none ; 
+    -moz-user-select: none ; 
+    -ms-user-select: none ; 
+    user-select: none ;
+}
 .thehumanbot-gallery {
   position: relative;
   margin-bottom: 7em;
   float: left;
   width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.thehumanbot-gallery .row .col-xs-6, .thehumanbot-gallery .row .col-sm-4, .thehumanbot-gallery .row .col-md-3{
+    margin-right: 0px;
+    padding: 0px;
 }
 .thehumanbot-gallery .gallery-item {
   width: 25%;
@@ -13,6 +25,8 @@
   display: block;
   float: left;
   z-index: 110;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 .thehumanbot-gallery .gallery-item img {
   position: relative;
@@ -134,31 +148,40 @@
   bottom: 0px;
 }
 /*./end gallary css, critical css*/
-#sidebar {
+#sidebar{
     background-color: #000;
     text-align: left;
     padding-top: 20px;
     padding-bottom: 05px;
+    padding-left: 30px;
+    padding-right: 30px;
     position: fixed;
     bottom: 0;
     top: 0;
     left: 0;
-    overflow-x: none;
-    overflow-y: none;
     z-index: 1001;
+}
+.sidebar {
+    background-color: #000;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 18px;
+    padding-right: 25px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 #gallarySection, #contactSection, #aboutSection {
     padding-left:0px;
     padding-right: 0px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
     position: fixed;
-    bottom: 0;
+    bottom: -122px;
     top: 0;
     left: 33.33%;
+    overflow-x: hidden;
     overflow-y: auto;
-    overflow-x: none;
     float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -166,7 +189,7 @@
     background-color:dodgerblue;
 }
 #profilePic {
-    width:80%
+    width:90%
 }
 /*#closeSidebar {
     font-weight: bold;
@@ -235,4 +258,38 @@
         left: 0;
         width: 100%;
     }
+    #sidebar{
+        overflow-y: scroll;
+        overflow-x: none;
+    }
+}
+@media (min-width:768px) {
+    #smallNav, #openSmallNavSidebar{
+       display: none;
+    }
+}
+#smallNav {
+    background-color: black;
+    display: none;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+#smallNavOpen {float:left;margin-left: 47%;}
+#bio{padding-right:10px;}
+#smallNavMenu{
+    background-color:lightgray;
+    height:20%;
+    width:100%;
+    position:absolute;
+    bottom: 0px;
+    left:0px;
+    right:0px;
+    display:none;
+    padding:10px;}
+#smallNavClose{padding-right:10px;padding-top:10px;color:black;}
+#smallNavBody{opacity:.7;padding-top:0px;padding-bottom:30px;padding-left:0px;padding-right:0px;}
+#smallNavNav{padding-bottom:10px;padding-top:5px;padding-left:5px;padding-right:5px;width:100%;text-align:center;}
+#openSmallNavSidebar {
+    padding-right: 10px;
 }

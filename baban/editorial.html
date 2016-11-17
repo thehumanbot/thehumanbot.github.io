@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="framework/css/style.min.css" />
         <link href="gallary/css/lightgallery.css" rel="stylesheet">
     </head>
-    <body>
+    <body  ondragstart="return false" onselectstart="return false" oncontextmenu="return false;">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4 fullscreen" id="sidebar">
@@ -33,6 +33,7 @@
                         <div class="container-fluid" id="smallMenuBody">
                         <a class="close animated" id="smallMenuClose">X</a>
                         <div class="btn-group" id="smallMenuNav">
+                            <a href="index.html" class="btn-link" id="navBtnXs">Home  |</a>
                             <a href="fashion.html" class="btn-link" id="navBtnXs">Fashion  |</a>
                             <a href="celebrity.html" class="btn-link" id="navBtnXs">Celebrity |</a>
                             <a href="wedding.html" class="btn-link" id="navBtnXs">Wedding |</a>
@@ -44,47 +45,42 @@
                         </div>
                     </div>
                 </div>
-        <div class="col-sm-8 animated fadeIn" id="gallarySection">
-            <div id="gallary-header"><h2>Editorial :</h2></div>
-                    <div class="thehumanbot-gallery">
+        <div class="col-sm-8" id="gallarySection">
+            <div class="container-fluid" id="smallNav">
+                <div class="sidebar">
+                    <a id="closeSmallNavSidebar" class="glyphicon glyphicon-remove close" href="#thehumanbot-gallery"></a>
+                    <img src="framework/css/image/5.jpg" class="animated fadeInRight" id="profilePic"/>
+                    <h1 class="animated fadeInleft">Baban 
+                    Photography</h1>
+                    <h4 class="animated fadeInRight">Makes The Moments Immortal</h4>
+                    <p class="animated fadeInLeft">Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.
+                    Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non 
+                    </p><br>
+                    <a id="smallNavOpen" class="glyphicon glyphicon-chevron-up close"></a>
+                    <div id="smallNavMenu" class="animated slideInUp">
+                        <div class="container-fluid" id="smallNavBody">
+                        <a class="close" id="smallNavClose">X</a>
+                        <div class="btn-group" id="smallMenuNav">
+                            <a href="index.html" class="btn-link" id="navBtnXs">Home  |</a>
+                            <a href="fashion.html" class="btn-link" id="navBtnXs">Fashion  |</a>
+                            <a href="celebrity.html" class="btn-link" id="navBtnXs">Celebrity |</a>
+                            <a href="wedding.html" class="btn-link" id="navBtnXs">Wedding |</a>
+                            <a href="editorial.html" class="btn-link" id="navBtnXs">Editorial </a><br>
+                            <a href="behind.html" class="btn-link" id="navBtnXs">Behind The Scenes |</a>
+                            <a href="about.html" class="btn-link" id="navBtnXs">About Me |</a>
+                            <a href="contact.html" class="btn-link" id="navBtnXs">Contact Me</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="gallary-header"><h2>Editorial : <a href="#smallNav" id="openSmallNavSidebar" class="close"><span class="glyphicon glyphicon-list"></span></a></h2></div>
+                    <div class="thehumanbot-gallery  animated zoomInDown">
                         <!--sample code section>
                         
                     <./ sample code section-->
                         <h1 style="text-align:center">SORRY!!!<br> I AM PREPARING IMAGES FROM MY CLICKS FOR THIS SECTION<br>YOU CAN EXPECT THEM SHORTLY<br>THANKS FOR U VISIT</h1>
-                    <!--ul id="lightgallery" class="list-unstyled">
-                    <li data-responsive="img/fashion/fashion-%20(1).jpg" data-src="img/fashion/fashion-%20(1).jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>" class="gallery-item">
-                    <span class="overlay">
-						<h2>Fashion</h2>
-					</span>
-                    <a href="">
-                        <img class="img-responsive" src="img/fashion/fashion-%20(1).jpg">
-                    </a>
-                    </li>
-                    <li data-responsive="img/fashion/fashion-%20(2).jpg" data-src="img/fashion/fashion-%20(2).jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>" class="gallery-item">
-                    <span class="overlay">
-						<h2>Fashion</h2>
-					</span>
-                    <a href="">
-                        <img class="img-responsive" src="img/fashion/fashion-%20(2).jpg">
-                    </a>
-                    </li>
-                    <li data-responsive="img/fashion/fashion-%20(3).jpg" data-src="img/fashion/fashion-%20(3).jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>" class="gallery-item">
-                    <span class="overlay">
-						<h2>Fashion</h2>
-					</span>
-                    <a href="">
-                        <img class="img-responsive" src="img/fashion/fashion-%20(3).jpg">
-                    </a>
-                    </li>
-                    <li data-responsive="img/fashion/fashion-%20(13).jpg" data-src="img/fashion/fashion-%20(13).jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>"  class="gallery-item">
-                    <span class="overlay">
-						<h2>Fashion</h2>
-					</span>
-                    <a href="">
-                        <img class="img-responsive" src="img/fashion/fashion-%20(13).jpg">
-                    </a>
-                </li>
-            </ul-->
+                    
 				
 				
         </div>

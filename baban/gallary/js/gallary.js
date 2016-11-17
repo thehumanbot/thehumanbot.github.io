@@ -30,8 +30,19 @@ $('#close').click(function() {
 $('#smallMenuClose').click(function() {
     $('#smallDvcMenu').fadeOut();
     document.getElementById("close").style.display="block";
-});	
-
+});
+$('#smallNavOpen').click(function() {   
+    $('#smallNavMenu').fadeIn();
+});
+$('#smallNavClose').click(function() {
+    $('#smallNavMenu').fadeOut();
+});
+$('#closeSmallNavSidebar').click(function() {
+    $('#smallNav').fadeOut();
+});
+$('#openSmallNavSidebar').click(function() {
+    $('#smallNav').fadeIn();
+});
 var isMobile = {
 		Android: function() {
 			return navigator.userAgent.match(/Android/i);
